@@ -231,7 +231,7 @@ export const CONSTANTS: {
 
   // Also update doc/source/changelog.rst
   LatestUpdate: `
-v2.3.0 Hotfixes (last updated 29 May 2023)
+v2.3.0 Hotfixes (last updated 30 May 2023)
 ------------------------------------------
 
 * Several important fixes for savegame migration issues from older version (@d0sboots)
@@ -244,6 +244,8 @@ v2.3.0 Hotfixes (last updated 29 May 2023)
 * Fix an issue with Find All Valid Math Expressions not accepting empty array when that was the solution. (@Snarling)
 * Fix an issue with scan-analyze display when the player had AutoLink.exe (@Snarling)
 * Reverted undocumented change that program filenames were case sensitive for ns.fileExists. They are case insensitive again. (@Snarling)
+* Fix issue that could lead to SF3 research desync. (@Snarling)
+* An issue from pre-2.3 could cause scripts to have the wrong "server" property. This caused issues in 2.3, and a fix now repairs any scripts with a mismatched server property. (@Snarling)
 
 v2.3.0 - SF3 rework and performance improvements (25 May 2023)
 ----------------------------------------------------------------
